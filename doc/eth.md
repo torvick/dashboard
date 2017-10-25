@@ -23,7 +23,6 @@ copy the geth service file to /etc/systemd/system/geth.service
 
 
     sudo apt install nginx -y fcgiwrap
-    sudo systemctl restart nginx
 
 copy default file to /etc/nginx/sites-enabled/default
 
@@ -53,8 +52,6 @@ copy filter.service file to /etc/systemd/system/filter.service
 
     sudo systemctl start filter
     sudo systemctl enable filter
-
-    sudo sh -c "echo 'www-data ALL=(ALL) NOPASSWD: /usr/sbin/service filter restart' >> /etc/sudoers"
 
 You need to create at least one account and use it as a base account for withdrawals 
 
