@@ -37,9 +37,9 @@ copy the cgi files to /var/www/html/cgi-bin and update total.cgi with your usern
     sudo chmod +x /var/www/html/cgi-bin/*
 
 ### Install filter service
-copy total.js to /home/ubuntu
+copy total.js to /var/www
 
-    sudo chown www-data:www-data /home/ubuntu/total.js
+    sudo chown www-data:www-data /var/www/total.js
 don't forget to edit service.rb with your url
 
     sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev nodejs ruby-all-dev ruby
