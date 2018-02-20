@@ -5,7 +5,7 @@ An open-source crypto currency exchange
 
 [![Code Climate](https://codeclimate.com/github/peatio/peatio.png)](https://codeclimate.com/github/peatio/peatio)
 [![Build Status](https://travis-ci.org/peatio/peatio.png?branch=master)](https://travis-ci.org/peatio/peatio)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/peatio/peatio?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/InfraexDevPeatio/Lobby)
 
 Peatio is a free and open-source crypto currency exchange implementation with the Rails framework and other cutting-edge technology.
 
@@ -19,7 +19,7 @@ Help is greatly appreciated, feel free to submit pull-requests or open issues.
 
 ### Things You Should Know ###
 
-RUNNING A EXCHANGE IS HARD.
+RUNNING AN EXCHANGE IS HARD.
 
 Peatio makes it easier, but running an exchange is still harder than a blog, which you can download the source code and following the guide or even a cool installer and boom!!! a fancy site is there to profit. We always prioritize security and speed higher than 1-click setup. We split Peatio to many components (processes) so it's flexible to deploy and scalable.
 

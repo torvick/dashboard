@@ -154,7 +154,7 @@ we will alsp need to enable passenger in nginx config file
 
 and uncomment
 
-    include  /etc/nginx/passenger.conf;.
+    include  /etc/nginx/passenger.conf;
 
 ### 8. Install JavaScript Runtime
 
