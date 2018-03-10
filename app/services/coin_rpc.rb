@@ -14,7 +14,7 @@ class CoinRPC
   def self.[](currency)
     c = Currency.find_by_code(currency.to_s)
     if c && c.rpc
-      name = c.code.upcase || 'BTC'
+      name = c.family || 'BTC'
       "::CoinRPC::#{name}".constantize.new(c.rpc)
     end
   end
@@ -77,7 +77,7 @@ class CoinRPC
 
     def safe_getbalance
       begin
-        (open('http://your_server_ip/cgi-bin/total.cgi').read.rstrip.to_f)
+        (open(@uri.host + '/cgi-bin/total.cgi').read.rstrip.to_f)
       rescue
         'N/A'
       end

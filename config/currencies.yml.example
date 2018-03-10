@@ -16,6 +16,7 @@
   code: btc
   symbol: "฿"
   coin: true
+  family: BTC
   quick_withdraw_max: 0
   rpc: http://username:password@127.0.0.1:18332
   blockchain: https://blockchain.info/tx/#{txid}
@@ -30,6 +31,7 @@
   symbol: "฿"
   coin: true
   base_address: YOUR_BASE_ADDRESS
+  family: ETH
   precision: 4
   quick_withdraw_max: 0
   rpc: http://Your_eth_server_ip
