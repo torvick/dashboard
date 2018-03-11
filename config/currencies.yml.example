@@ -30,7 +30,7 @@
   code: eth
   symbol: "฿"
   coin: true
-  base_address: YOUR_BASE_ADDRESS
+  main_address: YOUR_BASE_ADDRESS
   family: ETH
   precision: 4
   quick_withdraw_max: 0
