@@ -189,6 +189,10 @@ More details to visit [pusher official website](http://pusher.com)
 
 When daemons don't work, check `log/#{daemon name}.rb.output` or `log/peatio:amqp:#{daemon name}.output` for more information (suffix is '.output', not '.log').
 
+**Run solvency**
+
+    rake solvency:liability_proof mate
+ 
 **Run Peatio**
 
     # start server
