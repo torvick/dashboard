@@ -27,7 +27,7 @@ Do chmod +x connect.sh
     sudo chown deploy:deploy /var/log/bitgod.log
 
 Let's make a service for bitgod to automate it!
-Do vim /etc/systemd/systemd/bitgod.service then add 
+Do vim /etc/systemd/system/bitgod.service then add 
 
     [Unit]
     Description=Bitgod daemon
