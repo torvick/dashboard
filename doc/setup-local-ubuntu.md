@@ -191,7 +191,7 @@ When daemons don't work, check `log/#{daemon name}.rb.output` or `log/peatio:amq
 
 **Run solvency**
 
-    rake solvency:liability_proof mate
+    rake solvency:liability_proof
  
 **Run Peatio**
 
