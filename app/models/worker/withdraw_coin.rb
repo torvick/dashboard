@@ -17,7 +17,7 @@ module Worker
 
       Withdraw.transaction do
         withdraw = Withdraw.lock.find payload[:id]
-	c = Currency.find_by_code(currency.to_s)
+	c = Currency.find_by_code(withdraw.currency.to_s)
         return unless withdraw.almost_done?
         if withdraw.currency == 'eth'
           balance = open(c.rpc + '/cgi-bin/total.cgi').read.rstrip.to_f
