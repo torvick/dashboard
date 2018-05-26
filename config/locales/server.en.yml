@@ -494,6 +494,9 @@ en:
       satoshis:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
+      ethers:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
       banks:
         destroy:
           notice: Revocation request is successful.
