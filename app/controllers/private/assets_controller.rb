@@ -3,13 +3,20 @@ module Private
     skip_before_action :auth_member!, only: [:index]
 
     def index
-      @cny_assets  = Currency.assets('cny')
-      @btc_proof   = Proof.current :btc
-      @cny_proof   = Proof.current :cny
+      @proofs = {}
+      @accounts = {}
+      @currencies = []
 
-      if current_user
-        @btc_account = current_user.accounts.with_currency(:btc).first
-        @cny_account = current_user.accounts.with_currency(:cny).first
+      Currency.all.sort_by(&:code).map do |currency|
+        code = currency.code.to_sym
+        @proofs[currency.code] = Proof.current code
+        @currencies.push ({
+            code: currency.code,
+            coin: currency.coin?
+        })
+        if current_user
+          @accounts[currency.code] = current_user.accounts.with_currency(code).first
+        end
       end
     end
 
