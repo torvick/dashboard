@@ -3,8 +3,8 @@ html lang="en"
   head
     link rel="shortcut icon" href="/favicon.ico"
     = include_gon
-    = stylesheet_link_tag "application", :media => "all"
-    = javascript_include_tag "application"
+    = stylesheet_link_tag "bootstrap/_custom", "_bootstrap-sprockets", "bazzar/style", "bazzar/styles", "bazzar/wow", "features/_welcome", :media => "all"
+    = javascript_include_tag "bootstrap/custom"
     = javascript_include_tag "locales/#{I18n.locale}"
     = render 'shared/html5'
     = render 'shared/meta'
@@ -13,5 +13,5 @@ html lang="en"
     #wrap
       = render 'shared/alert'
       = yield
-      #push
+    #push
     = render 'shared/footer'

@@ -1,0 +1,172 @@
+es:
+  js:
+    brand: Peatio
+    submit: Enviar
+    cancel: Cancelar
+    confirm: Confirmar
+    banks:
+      icbc: Industria y Banco Comercial de China
+      cbc: Banco de Construcción de China
+      bc: Banco de China
+      bcm: Banco de Comunicaciones
+      abc: Banco de Agricultura de China
+      cmb: China Merchants Bank Ltd
+      cmbc: China Minsheng Banking Co., Ltd
+      cncb: China CITIC Bank
+      hxb: Hua Xia Bank Co., Ltd.
+      cib: Industrial Bank Co., Ltd
+      spdb: Shanghai Pudong Development Bank
+      bob: Banco de beijing
+      ceb: China Everbright Bank CO.LTD
+      sdb: Shenzhen Development Bank
+      pab: Ping An Bank Co., Ltd.
+      gdb: Banco de Desarrollo de Guangdong
+      psbc: Postal Savings Bank of China
+      bos: Banco de Shanghai
+    fund_sources:
+      manage_bank_account: Gestión de cuentas bancarias
+      manage_bank_account_desc: Para facilitar la elección de retiros bancarios de domicilio.
+      manage_coin_address: Gestión de la dirección de la moneda
+      manage_coin_address_desc: Para facilitar la elección de los retiros de moneda de dirección.
+      bank: Banco
+      account: Cuenta bancaria
+      label: Etiqueta
+      address: Dirección
+      action: Accion
+      add: Añadir
+      remove: Retirar
+      default: Defecto
+    funds:
+      deposit: Deposito
+      withdraw: Retirar
+      currency_name:
+        cny: CNY
+        btc: BTC
+      deposit_cny:
+        title: Chinese Yuan Deposit
+        desc: "To deposit via Bank transfer, please follow these steps:"
+        desc_item_1: "1. Submit the form to get the identification code."
+        desc_item_2: "2. Transfer the money to exchange's bank account. Please make sure your referral code was written on the form you fill in."
+        desc_item_3: "3. Your deposit will be confirmed as soon as the money is received."
+        attention: "Attention: The name of your bank account must be the same as your account name on our site, otherwise your deposit may fail."
+        from: From
+        to: To
+        deposit_name: Your Name
+        deposit_account: Deposit Account
+        add: Add
+        manage: Manage
+        amount: Deposit Amount
+        min_amount: At least 10 yuan
+        to_account: Account
+        to_name: Name
+        to_bank_name: Bank Name
+        opening_bank_name: Account where created
+        remark: 'Referral Code (Transfer identification code)'
+
+      deposit_btc:
+        title: Depósito BTC
+
+      deposit_coin:
+        address: Dirección
+        new_address: Nueva direccion
+        confirm_gen_new_address: ¿Seguro que quieres generar una nueva dirección de depósito?
+        open-wallet: Utilice sus servicios de billetera común, billetera local, terminal móvil o billetera en línea, seleccione un pago y envíe.
+        detail: Pegue la dirección en su billetera y complete la cantidad que desea depositar, luego confirme y envíe.
+        scan-qr: Escaneando el código QR para pagar en la billetera del terminal móvil.
+        after_deposit: Una vez que complete el envío, puede verificar el estado de su nuevo depósito a continuación.
+        generate-new: Generar nueva dirección
+
+      deposit_history:
+        title: Historial de depósitos
+        number: '#'
+        identification: Código de identificación
+        time: Hora
+        txid: ID de transacción
+        confirmations: Confirmaciones
+        from: Desde
+        amount: Cantidad
+        state_and_action: "Estado / Acción"
+        cancel: cancelar
+        no_data: No hay datos históricos
+
+        submitting: Enviando
+        cancelled: Cancelado
+        submitted: Presentado
+        accepted: Aceptado
+        rejected: Rechazado
+        checked: Revisado
+        warning: Advertencia
+        suspect: Sospechoso
+
+      withdraw_cny:
+        title: Yuan chino se retira
+        intro: Seleccione el banco para cobrar el monto de retiro e ingrese el número de cuenta y complete el envío.
+        intro_2: Su cuenta bancaria y nombre deben coincidir con el nombre de autenticación de nombre real.
+        attention: "Horas de trabajo: 9:00 - 18:00"
+        account_name: Nombre de la cuenta
+        withdraw_address: Retirar dirección
+        balance: Balance
+        withdraw_amount: Retirar cantidad
+        manage_withdraw: Administrar Retirar
+        fee_explain: Acerca de la tarifa
+        min: Al menos
+        withdraw_all: Retirar todo
+
+      withdraw_btc:
+        title: BTC Retirar
+
+      withdraw_coin:
+        intro: Por favor, complete la dirección y el monto, luego envíe el formulario. Se confirmará en 10 minutos.
+        label: Etiqueta
+        balance: Balance
+        amount: Cantidad
+        manage_withdraw: Gestionar dirección
+        min: Al menos
+        withdraw_all: Retirar todo
+        fee_explain: Acerca de la tarifa
+
+      withdraw_history:
+        title: Retirar la historia
+        number: Numero
+        withdraw_time: Hora
+        withdraw_account: Retirar cuenta
+        withdraw_address: Dirección
+        withdraw_amount: Cantidad
+        actual_amount: Cantidad actual
+        fee: Cuota
+        miner_fee: Cuota
+        state_and_action: "Estado / Acción"
+        cancel: Cancelar
+        no_data: No hay datos históricos
+
+        submitting: Enviando
+        submitted: Presentado
+        rejected: Rechazado
+        accepted: Aceptado
+        suspect: Sospechoso
+        processing: Procesamiento
+        coin_ready: Listo para monedas
+        coin_done: Moneda hecha
+        done: Hecho
+        almost_done: Casi termino
+        canceled: Cancelado
+        failed: Ha fallado
+
+    auth:
+      please_active_two_factor: Por favor, establezca primero el número de móvil o el autenticador de google.
+      submit: Enviar
+      otp_placeholder: Contraseña de 6 dígitos
+      google_app: Google Authenticator
+      sms: Mensajes de verificación de SMS
+      send_code: Enviar código
+      send_code_alt: Reenviar en COUNT segundos
+      hints:
+        app: Google Authenticator volverá a generar una nueva contraseña cada treinta segundos, ingrese a tiempo.
+        sms: Le enviaremos un mensaje de texto a su teléfono con el código de verificación.
+
+    markets:
+      market_list:
+        all: Todo el mercado
+        cny: CNY Market
+        btc: BTC Market
+

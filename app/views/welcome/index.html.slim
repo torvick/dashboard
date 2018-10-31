@@ -1,6 +1,135 @@
-header.text-center
+nav.navbar.navbar-inverse.hidden-md.hidden-lg
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"]
+        span.sr-only
+          | Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand[href="http://localhost:8084/BazzarCash2017/#"]
+        /img[alt="Ico" height="25px" src="/assets/bazzar/ico.png"]
+        = image_tag "bazzar/icon.png", height: '25px', alt: 'Ico'
+    #bs-example-navbar-collapse-1.navbar-collapse.collapse[aria-expanded="false" style="height: 1px;"]
+      ul.nav.navbar-nav
+        li.active
+          a[href="http://localhost:8084/BazzarCash2017/index"]
+            | Mercado
+            span.sr-only
+              | (current)
+        li
+          a[href="http://localhost:8084/BazzarCash2017/noticia"]
+            | Noticias
+        li
+          a[href="http://localhost:8084/BazzarCash2017/#" data-toggle="modal" data-target="#login"]
+            | Iniciar Sesion
+        li
+          a#registrar[onclick="onEditarReg()" href="http://localhost:8084/BazzarCash2017/#registro" data-toggle="modal" data-target="#registro"]
+            |  Registrar
+.container.hidden-xs.hidden-sm style="margin-bottom:10px;"
+  .row
+    .header-menu
+      .left-block-menu
+        .one-menu.sh1 onclick="slider(1)"
+          a href="http://localhost:8084/BazzarCash2017/"
+          span style=("font-size:14px;font-weight:bold;font-family: Orbitron, sans-serif;") Exchange
+          .btn-2
+            .l-bt
+            .t-bt
+            .r-bt
+            .b-bt
+        a href="http://localhost:8084/BazzarCash2017/noticia"
+          .one-menu.wow.slideInLeft data-wow-duration="2s" onclick="slider(3)"
+            span style=("font-size:14px;font-weight:bold;font-family: Orbitron, sans-serif;") Noticias
+            .btn-s
+              .l-bt
+              .t-bt
+              .r-bt
+              .b-bt
+        = link_to signin_path,  :id => "registrar" do
+          .one-menu.sh2.wow.slideInLeft data-wow-duration="3s"
+            span style=("color:#FBCA16;font-size:14px;font-weight:bold;font-family: Orbitron, sans-serif;")
+              | Registrar
+            .btn-s style=""
+              .l-bt
+              .t-bt
+              .r-bt
+              .b-bt
+        a href="http://localhost:8084/BazzarCash2017/market"
+          .one-menu.wow.slideInLeft data-wow-duration="3s"
+            span style=("font-size:14px;font-weight:bold;font-family: Orbitron, sans-serif;") Mercado
+            .btn-s
+              .l-bt
+              .t-bt
+              .r-bt
+              .b-bt
+      .right-block-menu
+        .one-menu.sh1
+          a
+            span#pais style="text-align:right;font-size:12px;"
+          a data-toggle="modal"
+            = image_tag 'bazzar/9IEN4P.png' , :class => "img_preview", :height =>"30px"
+            span#country PE
+          .btn-2
+            .l-bt
+            .t-bt
+            .r-bt
+            .b-bt
+        a.one-menu.wow.slideInRight[href="http://localhost:8084/BazzarCash2017/#" data-wow-duration="2s"]
+          span[style="font-size:14px;font-weight:bold;font-family: Orbitron, sans-serif;"]
+            | Referidos
+          .btn-s
+            .l-bt
+            .t-bt
+            .r-bt
+            .b-bt
+        a href="#{signin_path}" role="button"
+          .one-menu.sh2.wow.slideInRight[ data-wow-duration="3s" data-toggle="modal" data-target="#login" onclick=" "]
+            span#userN[style="color:#FBCA16;font-size:14px;font-weight:bold;font-family: Orbitron, sans-serif;"]
+              | Iniciar Sesión
+              i.glyphicon.glyphicon-user[style="margin-left: 5px;"]
+            .btn-s
+              .l-bt
+              .t-bt
+              .r-bt
+              .b-bt
+        a.one-menu.wow.slideInRight[href="http://localhost:8084/BazzarCash2017/#" data-toggle="modal" data-target="#login" data-wow-duration="3s"]
+          span[style="font-size:14px;font-weight:bold;font-family: Orbitron, sans-serif;"]
+            | Carteras
+            i.glyphicon.glyphicon-plus[style="margin-left: 5px;"]
+          .btn-s
+            .l-bt
+            .t-bt
+            .r-bt
+            .b-bt
+  .block-logo.hidden-xs.hidden-sm
+    .wow.fadeInUp
+      a[href="#{signin_path}"]
+        = image_tag 'bazzar/logo2.png', :width=> "90%"
+  .row
+    .hr.hidden-xs.hidden-sm[style="float:left;"]
+    .hr2.hidden-xs.hidden-sm[style="float:right;"]
+    .news-marquee.col-xs-3[style="width: 33%;margin-top:2%;margin-left: 66%;"]
+      .col-xs-2[style="font-weight:bold;margin-top:0px;"]
+        | Noticias
+
+.hidden-md.hidden-lg[style="text-align:center;"]
+  .wow.fadeInUp
+    a[href="http://localhost:8084/BazzarCash2017/index"]
+      = image_tag 'bazzar/logo2.png', :width=> "50%"
+.col-xs-10[style="font-weight:0;color:#ccc;font-size:10px;"]
+  marquee#marqueTitle[scrolldelay="100" scrollamount="10" direction="left" loop="infinite" width="100%" onmouseout="this.start()" onmouseover="this.stop()"]
+  #rev_slider_4_1_wrapper.rev_slider_wrapper.fullwidthbanner-container.tp-mouseover data-alias="bazzslider" style=("margin: 0px auto; background-color: transparent; padding: 0px; overflow: visible; height: 552px;")
+    #rev_slider_4_1.rev_slider.fullwidthabanner.revslider-initialised.tp-simpleresponsive data-slideactive="rs-14" data-version="5.2.6" style=("margin-top: 0px; margin-bottom: 0px; height: 552px;")
+    .tp-parallax-wrap style=("position: absolute; visibility: visible; left: 20%; top: 9px; z-index: 5;")
+      .tp-loop-wrap style="position:absolute;"
+        .tp-mask-wrap style=("position: absolute; overflow: visible; height: auto; width: auto;")
+          = image_tag 'bazzar/world.png', :class => "image-word"
+
+
+/header.text-center
   .ribbon
-    a href="https://github.com/peatio/peatio" View on GitHub
+    a href="http://bazzarcash.com" Bazzarcash
   .container
     a href='http://github.com/peatio/peatio'
       img src='#{image_path 'logo.png'}' width='336px'
